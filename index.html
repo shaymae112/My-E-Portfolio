@@ -1,5 +1,4 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<script>document.addEventListener("error",function(e){var t=e.target;if(t&&t.tagName==="IMG"&&t.id!=="lbimg")t.style.visibility="hidden"},true);</script>
 <title>Shayma Mariey&#39;s E-Portfolio</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +30,7 @@ html.lenis,html.lenis body{height:auto}
 html{background:var(--cream)}
 .bgfx{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:#EADCC0}
 .bgfx-p{position:absolute;inset:-14% -8%;transform:translate3d(0,var(--py,0px),0);will-change:transform}
-.bgfx-t{position:absolute;inset:0;background:url(img/texture.jpg) center/cover no-repeat;animation:drift 46s ease-in-out infinite alternate;will-change:transform}
+.bgfx-t{position:absolute;inset:0;background:url(texture.jpg) center/cover no-repeat;animation:drift 46s ease-in-out infinite alternate;will-change:transform}
 @keyframes drift{0%{transform:scale(1.04) translate3d(-1.5%,0,0) rotate(0deg)}50%{transform:scale(1.12) translate3d(1.5%,-2%,0) rotate(.6deg)}100%{transform:scale(1.06) translate3d(2%,1.5%,0) rotate(-.4deg)}}
 .shd{position:absolute;border-radius:50%;mix-blend-mode:multiply;opacity:.55;will-change:transform}
 .shd.a{width:70vmax;height:42vmax;left:-18vmax;top:8vh;background:radial-gradient(closest-side,rgba(60,30,20,.55),rgba(60,30,20,0));animation:sa 31s ease-in-out infinite alternate}
@@ -75,7 +74,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;text-wrap:balance}
 /* preloader: the monogram rises from behind a hairline and the name follows, then the sheet lifts away with a curved edge */
 .pl{position:fixed;inset:0;z-index:100;color:var(--cream)}
 .pl-sheet{position:absolute;inset:0;background:linear-gradient(#2e1f19,#1d130f)}
-.pl-sheet::before{content:"";position:absolute;inset:0;background:url(img/texture.jpg) center/cover;opacity:.16;mix-blend-mode:screen}
+.pl-sheet::before{content:"";position:absolute;inset:0;background:url(texture.jpg) center/cover;opacity:.16;mix-blend-mode:screen}
 .pl-sheet::after{content:"";position:absolute;left:-12%;right:-12%;top:calc(100% - 1px);height:24vh;background:#1d130f;border-radius:0 0 50% 50%/0 0 100% 100%}
 .pl.out .pl-sheet{transform:translateY(calc(-100% - 24vh));transition:transform 1.15s cubic-bezier(.76,0,.24,1)}
 .pl-c{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:clamp(18px,3vh,30px);transition:opacity .45s,transform .9s cubic-bezier(.76,0,.24,1)}
@@ -354,7 +353,7 @@ html.ready .hero-cut::before{opacity:1}
 .show{display:grid;gap:16px;outline:none}
 .show:focus-visible .sh-stage{outline:2px solid var(--bord);outline-offset:4px}
 .sh-stage{position:relative;overflow:hidden;aspect-ratio:16/9;max-height:min(74vh,720px);width:100%;background:var(--esp);touch-action:pan-y;user-select:none}
-.sh-stage::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 80% at 50% 45%,rgba(255,240,220,.16),transparent 70%),url(img/texture.jpg) center/cover;opacity:.55;mix-blend-mode:soft-light}
+.sh-stage::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 80% at 50% 45%,rgba(255,240,220,.16),transparent 70%),url(texture.jpg) center/cover;opacity:.55;mix-blend-mode:soft-light}
 .sh-img{position:absolute;left:5%;top:6%;width:90%;height:84%;object-fit:contain;opacity:0;transform:translateX(24px) scale(.985);transition:opacity .7s var(--out),transform 1s var(--out);pointer-events:none;cursor:zoom-in}
 .sh-img.on{opacity:1;transform:none;pointer-events:auto}
 .v-phone .sh-stage{background:radial-gradient(110% 90% at 50% 0%,#FDF3EC,#F7DCCB 55%,#EFC0A3)}
@@ -426,7 +425,7 @@ html.ready .hero-cut::before{opacity:1}
 /* about: the section rises with a domed top that flattens as it settles */
 .about{position:relative;z-index:3;margin-top:-1px;--k:1;--v:rgba(245,239,219,.88);border-radius:calc(var(--k) * 50%) calc(var(--k) * 50%) 0 0 / calc(var(--k) * 22vh) calc(var(--k) * 22vh) 0 0;box-shadow:0 -40px 80px rgba(20,8,6,calc(.15 + var(--k) * .3));padding-block:clamp(70px,8vw,120px) clamp(44px,5vw,80px)}
 .about.tx{background:#EEE4CF}
-.about::before{content:"";position:absolute;inset:0;border-radius:inherit;background:url(img/texture.jpg) center/cover fixed;opacity:.38;mix-blend-mode:multiply;pointer-events:none;z-index:-1}
+.about::before{content:"";position:absolute;inset:0;border-radius:inherit;background:url(texture.jpg) center/cover fixed;opacity:.38;mix-blend-mode:multiply;pointer-events:none;z-index:-1}
 .ab2{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(36px,6vw,110px);align-items:center;padding-right:max(var(--pad),env(safe-area-inset-right,0px))}
 .ab2-pic{position:relative;margin:0}
 .ab2-pic>img{display:block;width:100%;height:auto;-webkit-mask-image:linear-gradient(to right,#000 80%,transparent);mask-image:linear-gradient(to right,#000 80%,transparent)}
@@ -530,7 +529,7 @@ html.ready .hero-cut::before{opacity:1}
 .bg-cream{background:#EBE0C2;color:var(--esp)}
 .bg-pearl{background:var(--pearl);color:var(--esp)}
 .bg-plate{background:#F5EEE4;color:var(--esp)}
-.bg-esp::before,.bg-bord::before{content:"";position:absolute;inset:0;background:url(img/texture.jpg) center/cover;opacity:.32;mix-blend-mode:luminosity;z-index:-1}
+.bg-esp::before,.bg-bord::before{content:"";position:absolute;inset:0;background:url(texture.jpg) center/cover;opacity:.32;mix-blend-mode:luminosity;z-index:-1}
 .cover>img.shot{width:92%;height:92%;object-fit:contain;transition:transform 1.1s var(--out)}
 .cover>img.shot.mul{mix-blend-mode:multiply}
 .cover>img.fillimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform 1.4s var(--out)}
@@ -657,7 +656,7 @@ html.js .clip.in{clip-path:inset(0)}
 /* video */
 .vid{margin:0;display:grid;gap:14px;min-width:0}
 .vid-case{position:relative;padding:clamp(10px,1.4vw,18px);background:var(--esp);box-shadow:0 40px 80px rgba(51,36,31,.35)}
-.vid-case::before{content:"";position:absolute;inset:0;background:url(img/texture.jpg) center/cover;opacity:.3;mix-blend-mode:luminosity}
+.vid-case::before{content:"";position:absolute;inset:0;background:url(texture.jpg) center/cover;opacity:.3;mix-blend-mode:luminosity}
 .vid video{position:relative;display:block;width:100%;height:auto;aspect-ratio:1600/894;background:#1c1411}
 .vid figcaption{color:var(--mut);font-family:var(--body);font-size:15.5px}
 /* slides */
@@ -794,7 +793,7 @@ html.js .clip.in{clip-path:inset(0)}
 .xp2-h p{margin:0;font-family:var(--body);font-size:19.5px;line-height:1.7;color:var(--mut);max-width:52ch}
 .xgrid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
 .xc{border-radius:22px;padding:clamp(24px,3vw,44px);display:grid;gap:18px;align-content:start;position:relative;overflow:hidden;isolation:isolate}
-.xc::before{content:"";position:absolute;inset:0;background:url(img/texture.jpg) center/cover;opacity:.18;mix-blend-mode:soft-light;z-index:-1;pointer-events:none}
+.xc::before{content:"";position:absolute;inset:0;background:url(texture.jpg) center/cover;opacity:.18;mix-blend-mode:soft-light;z-index:-1;pointer-events:none}
 .xc header{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-bottom:16px;border-bottom:1px solid currentColor;border-color:rgba(245,239,219,.22)}
 .xc-y{font-family:var(--serif);font-weight:300;font-size:clamp(44px,4.4vw,70px);line-height:.85;letter-spacing:-.03em}
 .xc-p{font-weight:600;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;opacity:.75}
@@ -825,7 +824,7 @@ html.js .clip.in{clip-path:inset(0)}
 .sk2-mos{--v:rgba(207,198,187,.6);padding-block:clamp(40px,5vw,70px)}
 .skg{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
 .skc{border-radius:20px;padding:clamp(24px,2.6vw,38px);display:grid;gap:18px;align-content:start;position:relative;overflow:hidden;isolation:isolate;min-height:220px}
-.skc::before{content:"";position:absolute;inset:0;background:url(img/texture.jpg) center/cover;opacity:.16;mix-blend-mode:soft-light;z-index:-1}
+.skc::before{content:"";position:absolute;inset:0;background:url(texture.jpg) center/cover;opacity:.16;mix-blend-mode:soft-light;z-index:-1}
 .skc-n{font-family:var(--serif);font-size:17.5px;opacity:.6}
 .skc h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,2.5vw,38px);line-height:1.05;margin:0}
 .skc-a{grid-column:1/6;grid-row:1/3;background:#1F1512;color:var(--cream)}
@@ -1033,7 +1032,7 @@ html.js .clip.in{clip-path:inset(0)}
 /* ===== draft 14 ===== */
 /* loader: the portfolio texture, slowly settling, with a moving light */
 .pl-sheet::before{display:none}
-.pl-tex{position:absolute;inset:-8%;background:url(img/texture.jpg) center/cover;transform:scale(1.16) rotate(-1.5deg);filter:blur(8px) saturate(1.05);animation:pltex 3.4s cubic-bezier(.22,1,.36,1) forwards}
+.pl-tex{position:absolute;inset:-8%;background:url(texture.jpg) center/cover;transform:scale(1.16) rotate(-1.5deg);filter:blur(8px) saturate(1.05);animation:pltex 3.4s cubic-bezier(.22,1,.36,1) forwards}
 @keyframes pltex{to{transform:none;filter:none}}
 .pl-glow{position:absolute;inset:0;background:radial-gradient(55% 45% at var(--gx2,50%) 46%,rgba(255,236,214,.16),rgba(29,19,15,.62) 62%,rgba(20,12,9,.86));animation:plglow 4s ease-in-out infinite alternate}
 @keyframes plglow{from{--gx2:44%}to{--gx2:56%}}
@@ -1085,7 +1084,7 @@ html.js .clip.in{clip-path:inset(0)}
 .sk3-tab.on{padding-left:18px;color:var(--bord)}
 .sk3-tab.on::before{width:100%}
 .sk3-panes{position:relative;border-radius:26px;background:var(--bord);color:var(--cream);overflow:hidden;isolation:isolate;min-height:460px}
-.sk3-panes::before{content:"";position:absolute;inset:0;background:url(img/texture.jpg) center/cover;opacity:.22;mix-blend-mode:soft-light;z-index:-1}
+.sk3-panes::before{content:"";position:absolute;inset:0;background:url(texture.jpg) center/cover;opacity:.22;mix-blend-mode:soft-light;z-index:-1}
 .sk3-pane{position:absolute;inset:0;padding:clamp(26px,3vw,48px);display:grid;align-content:start;gap:clamp(24px,3vw,40px);opacity:0;visibility:hidden;transform:translateY(18px);transition:opacity .5s,transform .7s var(--out),visibility 0s .5s}
 .sk3-pane.on{position:relative;opacity:1;visibility:visible;transform:none;transition:opacity .6s .1s,transform .8s .1s var(--out),visibility 0s}
 .sk3-ph{display:grid;gap:8px}
@@ -1150,7 +1149,7 @@ html.js .pc2-in.clip.in{clip-path:inset(-10% -40% -40% -40%)}
 .sk4{position:relative;z-index:3;--v:rgba(239,238,232,.7);padding-block:clamp(70px,8vw,120px)}
 .sk4-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .sk4-c{position:relative;border-radius:22px;padding:clamp(22px,2.4vw,34px);display:grid;align-content:start;gap:22px;overflow:hidden;isolation:isolate;background:var(--cream);color:var(--esp);box-shadow:inset 0 0 0 1px rgba(51,36,31,.1)}
-.sk4-c::before{content:"";position:absolute;inset:0;background:url(img/texture.jpg) center/cover;opacity:.2;mix-blend-mode:soft-light;z-index:-1}
+.sk4-c::before{content:"";position:absolute;inset:0;background:url(texture.jpg) center/cover;opacity:.2;mix-blend-mode:soft-light;z-index:-1}
 .sk4-0,.sk4-4{background:var(--bord);color:var(--cream);box-shadow:none}
 .sk4-2{background:var(--esp);color:var(--cream);box-shadow:none}
 .sk4-h{display:grid;gap:6px}
@@ -1434,7 +1433,7 @@ html.js .sx3 .role.rv.in{transform:none}
 /* loader: one baked texture, compositor-only motion, starts once the page can paint */
 html:not(.ready) #home{transform:none}
 html.ready:not(.settled) #home{transition:none}
-.pl-sheet{background:#F6EEDF url(img/loader-bg.jpg) center/cover;will-change:transform;transform:translate3d(0,0,0);backface-visibility:hidden}
+.pl-sheet{background:#F6EEDF url(loader-bg.jpg) center/cover;will-change:transform;transform:translate3d(0,0,0);backface-visibility:hidden}
 .pl-tex{display:none}
 .pl-glow{animation:none;background:radial-gradient(50% 42% at 50% 46%,rgba(255,255,255,.55),rgba(255,250,240,0) 70%)}
 .pl.out .pl-sheet{transform:translate3d(0,calc(-100% - 24vh),0)}
@@ -1543,7 +1542,7 @@ html.js .sx3 .tk-h.rv.in,html.js .sx3 .tk-end.rv.in{clip-path:inset(0 0 -20% 0)}
 
 /* skills: textured tiles */
 .bt::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .25 0 0 0 0 .15 0 0 0 0 .1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),url(img/texture.jpg) center/cover;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .25 0 0 0 0 .15 0 0 0 0 .1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),url(texture.jpg) center/cover;
   opacity:.3;mix-blend-mode:multiply}
 .bt-title::after{opacity:.5;mix-blend-mode:soft-light}
 
@@ -1896,17 +1895,17 @@ html.cv-open,html.cv-open body{overflow:hidden}
 <div class="pl" id="pl" aria-hidden="true">
   <div class="pl-sheet"><span class="pl-tex"></span><span class="pl-glow"></span></div>
   <div class="pl-c">
-    <div class="pl-mk"><img src="img/mono-burgundy.webp" alt=""></div>
+    <div class="pl-mk"><img src="mono-burgundy.webp" alt=""></div>
     <div class="pl-line"></div>
     <div class="pl-cap"><b><span>Shayma Mariey&#39;s <em>E-Portfolio</em></span></b></div>
     <span class="pl-corner l">Edition 2026</span><span class="pl-corner r">Doha, Qatar</span>
   </div>
 </div>
-<div class="cur" id="curtain" aria-hidden="true"><div class="cur-in"><img src="img/mono-cream.png" alt=""></div></div>
+<div class="cur" id="curtain" aria-hidden="true"><div class="cur-in"><img src="mono-cream.png" alt=""></div></div>
 
 <nav class="nav" id="nav" aria-label="Main">
   <div class="wrap nav-in">
-    <a class="brand intro-hide" href="#top" data-sec="top" aria-label="Shayma Mariey, home"><img class="b-l" src="img/mono-burgundy.webp" alt=""><img class="b-d" src="img/mono-cream.png" alt=""><span>Shayma Mariey</span></a>
+    <a class="brand intro-hide" href="#top" data-sec="top" aria-label="Shayma Mariey, home"><img class="b-l" src="mono-burgundy.webp" alt=""><img class="b-d" src="mono-cream.png" alt=""><span>Shayma Mariey</span></a>
     <ul class="intro-hide">
       <li><a href="#about" data-sec="about">About</a></li>
       <li><a href="#experience" data-sec="experience">Experience</a></li>
@@ -1924,7 +1923,7 @@ html.cv-open,html.cv-open body{overflow:hidden}
   <header class="hero tx tx-h" id="top">
     <div class="sheen"></div><div class="spot" id="spot"></div>
     <div class="wrap hero-in" id="heroIn">
-      <figure class="hero-cut hp" data-sp="5"><img src="img/me-landing.webp" alt="Portrait of Shayma Mariey" fetchpriority="high"></figure>
+      <figure class="hero-cut hp" data-sp="5"><img src="me-landing.webp" alt="Portrait of Shayma Mariey" fetchpriority="high"></figure>
       <div class="hero-txt">
         <h1><span class="ml"><span>Shayma</span></span><span class="ml"><span>Mariey&#39;s</span></span><span class="ml"><span class="ep">E-Portfolio</span></span></h1>
         <div class="hero-cta fade" style="--d:1.1s"><a class="btn" href="#work" data-sec="work">View my work</a><a class="btn ghost" href="#contact" data-sec="contact">Get in touch</a></div>
@@ -1938,8 +1937,8 @@ html.cv-open,html.cv-open body{overflow:hidden}
   <section class="about tx tx-l" id="about">
     <div class="ab2">
       <figure class="ab2-pic rv">
-        <img id="abimg" src="img/about.webp" alt="Shayma Mariey outside the College of Computing and IT at UDST">
-        <div class="ab-badge" aria-hidden="true"><svg viewBox="0 0 132 132"><defs><path id="ring" d="M66,66 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0"/></defs><text><textPath href="#ring" textLength="312" lengthAdjust="spacing">UDST Class of 2026 · UDST Class of 2026 ·</textPath></text></svg><img src="img/mono-cream.png" alt=""></div>
+        <img id="abimg" src="about.webp" alt="Shayma Mariey outside the College of Computing and IT at UDST">
+        <div class="ab-badge" aria-hidden="true"><svg viewBox="0 0 132 132"><defs><path id="ring" d="M66,66 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0"/></defs><text><textPath href="#ring" textLength="312" lengthAdjust="spacing">UDST Class of 2026 · UDST Class of 2026 ·</textPath></text></svg><img src="mono-cream.png" alt=""></div>
       </figure>
       <div class="ab2-txt">
         <span class="lab rv">01 / About me</span>
@@ -1954,7 +1953,7 @@ html.cv-open,html.cv-open body{overflow:hidden}
     </div>
     <div class="wrap">
       <dl class="ab2-facts rv">
-        <div class="edu"><dt>Education</dt><dd><span class="edu-row"><img class="edu-l" src="img/clients/mono/udst-esp-hd.png" alt="University of Doha for Science and Technology logo"><span class="edu-t">BSc Information Systems<span>University of Doha for Science and Technology, Class of 2026</span></span></span></dd></div>
+        <div class="edu"><dt>Education</dt><dd><span class="edu-row"><img class="edu-l" src="clients/mono/udst-esp-hd.png" alt="University of Doha for Science and Technology logo"><span class="edu-t">BSc Information Systems<span>University of Doha for Science and Technology, Class of 2026</span></span></span></dd></div>
         <div><dt>Focus</dt><dd>Front-end development and UI/UX design<span>Websites, mobile apps and web apps</span></dd></div>
         <div><dt>Languages</dt><dd>Arabic and English<span>Bilingual</span></dd></div>
         <div><dt>Recognition</dt><dd>UHUB Entrepreneurship Award<span>2025/2026 recipient and Web Summit delegate</span></dd></div>
@@ -1987,7 +1986,7 @@ html.cv-open,html.cv-open body{overflow:hidden}
     <div class="wrap">
       <div class="bento">
         <div class="bt bt-title t-wine rv"><span class="lab">03 / Skills</span><b class="bt-word" aria-hidden="true">Skills</b><h2>What I <span class="ital">work with</span></h2><p>Twenty-seven tools and languages across six disciplines, from the interface to the database and the tests that hold it together.</p></div>
-        <div class="bt bt-fe t-esp rv"><div class="bt-h"><em>01</em><span>4 tools</span></div><h3>Front-End Development</h3><p>Interfaces people use</p><ul><li><i><img src="img/logos/html.png" alt=""></i>HTML</li><li><i><img src="img/logos/css.png" alt=""></i>CSS</li><li><i><img src="img/logos/javascript.png" alt=""></i>JavaScript</li><li><i><img src="img/logos/react.png" alt=""></i>React Native</li></ul></div><div class="bt bt-be t-coc rv"><div class="bt-h"><em>02</em><span>5 tools</span></div><h3>Back-End Development</h3><p>Servers and APIs</p><ul><li><i><img src="img/logos/python.png" alt=""></i>Python</li><li><i><img src="img/logos/flask.png" alt=""></i>Flask</li><li><i><img src="img/logos/fastapi.png" alt=""></i>FastAPI</li><li><i><img src="img/logos/nodejs.png" alt=""></i>Node.js</li><li><i><img src="img/logos/rest-api.png" alt=""></i>REST APIs</li></ul></div><div class="bt bt-db t-esp rv"><div class="bt-h"><em>03</em><span>5 tools</span></div><h3>Database Management</h3><p>Storing data well</p><ul><li><i><img src="img/logos/postgresql.png" alt=""></i>PostgreSQL</li><li><i><img src="img/logos/sqlalchemy.png" alt=""></i>SQLAlchemy</li><li><i><img src="img/logos/firebase.png" alt=""></i>Firebase</li><li><i><img src="img/logos/database-design.png" alt=""></i>Database Design</li><li><i><img src="img/logos/crud.png" alt=""></i>CRUD Operations</li></ul></div><div class="bt bt-ux t-wine rv"><div class="bt-h"><em>04</em><span>5 tools</span></div><h3>UI/UX Design</h3><p>From flow to prototype</p><ul><li><i><img src="img/logos/figma.png" alt=""></i>Figma</li><li><i><img src="img/logos/wireframing.png" alt=""></i>Wireframing</li><li><i><img src="img/logos/prototyping.png" alt=""></i>Prototyping</li><li><i><img src="img/logos/user-flow.png" alt=""></i>User Flows</li><li><i><img src="img/logos/responsive.png" alt=""></i>Responsive Design</li></ul></div><div class="bt bt-da t-coc rv"><div class="bt-h"><em>05</em><span>3 tools</span></div><h3>Data and Analytics</h3><p>Turning data into insight</p><ul><li><i><img src="img/logos/powerbi.png" alt=""></i>Power BI</li><li><i><img src="img/logos/data-viz.png" alt=""></i>Data Visualization</li><li><i><img src="img/logos/data-analysis.png" alt=""></i>Data Analysis</li></ul></div><div class="bt bt-dt t-esp rv"><div class="bt-h"><em>06</em><span>5 tools</span></div><h3>Development Tools and Testing</h3><p>Shipping with confidence</p><ul><li><i><img src="img/logos/git.png" alt=""></i>Git</li><li><i><img src="img/logos/github.png" alt=""></i>GitHub</li><li><i><img src="img/logos/vscode.png" alt=""></i>VS Code</li><li><i><img src="img/logos/junit.png" alt=""></i>JUnit</li><li><i><img src="img/logos/jmeter.png" alt=""></i>JMeter</li></ul></div>
+        <div class="bt bt-fe t-esp rv"><div class="bt-h"><em>01</em><span>4 tools</span></div><h3>Front-End Development</h3><p>Interfaces people use</p><ul><li><i><img src="logos/html.png" alt=""></i>HTML</li><li><i><img src="logos/css.png" alt=""></i>CSS</li><li><i><img src="logos/javascript.png" alt=""></i>JavaScript</li><li><i><img src="logos/react.png" alt=""></i>React Native</li></ul></div><div class="bt bt-be t-coc rv"><div class="bt-h"><em>02</em><span>5 tools</span></div><h3>Back-End Development</h3><p>Servers and APIs</p><ul><li><i><img src="logos/python.png" alt=""></i>Python</li><li><i><img src="logos/flask.png" alt=""></i>Flask</li><li><i><img src="logos/fastapi.png" alt=""></i>FastAPI</li><li><i><img src="logos/nodejs.png" alt=""></i>Node.js</li><li><i><img src="logos/rest-api.png" alt=""></i>REST APIs</li></ul></div><div class="bt bt-db t-esp rv"><div class="bt-h"><em>03</em><span>5 tools</span></div><h3>Database Management</h3><p>Storing data well</p><ul><li><i><img src="logos/postgresql.png" alt=""></i>PostgreSQL</li><li><i><img src="logos/sqlalchemy.png" alt=""></i>SQLAlchemy</li><li><i><img src="logos/firebase.png" alt=""></i>Firebase</li><li><i><img src="logos/database-design.png" alt=""></i>Database Design</li><li><i><img src="logos/crud.png" alt=""></i>CRUD Operations</li></ul></div><div class="bt bt-ux t-wine rv"><div class="bt-h"><em>04</em><span>5 tools</span></div><h3>UI/UX Design</h3><p>From flow to prototype</p><ul><li><i><img src="logos/figma.png" alt=""></i>Figma</li><li><i><img src="logos/wireframing.png" alt=""></i>Wireframing</li><li><i><img src="logos/prototyping.png" alt=""></i>Prototyping</li><li><i><img src="logos/user-flow.png" alt=""></i>User Flows</li><li><i><img src="logos/responsive.png" alt=""></i>Responsive Design</li></ul></div><div class="bt bt-da t-coc rv"><div class="bt-h"><em>05</em><span>3 tools</span></div><h3>Data and Analytics</h3><p>Turning data into insight</p><ul><li><i><img src="logos/powerbi.png" alt=""></i>Power BI</li><li><i><img src="logos/data-viz.png" alt=""></i>Data Visualization</li><li><i><img src="logos/data-analysis.png" alt=""></i>Data Analysis</li></ul></div><div class="bt bt-dt t-esp rv"><div class="bt-h"><em>06</em><span>5 tools</span></div><h3>Development Tools and Testing</h3><p>Shipping with confidence</p><ul><li><i><img src="logos/git.png" alt=""></i>Git</li><li><i><img src="logos/github.png" alt=""></i>GitHub</li><li><i><img src="logos/vscode.png" alt=""></i>VS Code</li><li><i><img src="logos/junit.png" alt=""></i>JUnit</li><li><i><img src="logos/jmeter.png" alt=""></i>JMeter</li></ul></div>
       </div>
     </div>
   </section>
@@ -2019,7 +2018,7 @@ html.cv-open,html.cv-open body{overflow:hidden}
       <div class="sec-h">
         <div><span class="lab rv">06 / Internship showcase</span><h2 class="rv" style="margin-top:22px">From university projects <span class="ital">to real-world design.</span></h2></div>
       </div>
-      <a class="feat tx tx-d dark rv" href="#internship"><div class="feat-t"><span class="lab">Internship · Tam Holding Group</span><h4>SayndTech</h4><p class="feat-sub">UI/UX Design Intern</p><p>I applied what I learned at university to real business requirements, designing mobile apps, corporate websites, admin dashboards and brand materials across Tam Holding Group&#39;s companies.</p><ul class="feat-f"><li><em>Role</em>UI/UX Design Intern</li><li><em>Period</em>September to November 2026</li><li><em>Areas</em>Apps, websites, dashboards and branding</li></ul><span class="btn">Explore the internship</span></div><div class="feat-p"><img class="feat-img" src="img/internship3.webp" alt="Shayma beside the SayndTech sign at Tam Holding Group" loading="lazy"></div></a>
+      <a class="feat tx tx-d dark rv" href="#internship"><div class="feat-t"><span class="lab">Internship · Tam Holding Group</span><h4>SayndTech</h4><p class="feat-sub">UI/UX Design Intern</p><p>I applied what I learned at university to real business requirements, designing mobile apps, corporate websites, admin dashboards and brand materials across Tam Holding Group&#39;s companies.</p><ul class="feat-f"><li><em>Role</em>UI/UX Design Intern</li><li><em>Period</em>September to November 2026</li><li><em>Areas</em>Apps, websites, dashboards and branding</li></ul><span class="btn">Explore the internship</span></div><div class="feat-p"><img class="feat-img" src="internship3.webp" alt="Shayma beside the SayndTech sign at Tam Holding Group" loading="lazy"></div></a>
     </div>
   </section>
 
@@ -2031,7 +2030,7 @@ html.cv-open,html.cv-open body{overflow:hidden}
       <div class="crows rv" id="crows"></div>
     </div>
   </section>
-  <footer class="foot tx tx-d dark"><div class="wrap foot-in"><img src="img/mono-cream.webp" alt=""><span>© 2026 Shayma Mariey</span><div class="socials" id="socials"></div><a href="#top" data-sec="top">Back to top</a></div></footer>
+  <footer class="foot tx tx-d dark"><div class="wrap foot-in"><img src="mono-cream.webp" alt=""><span>© 2026 Shayma Mariey</span><div class="socials" id="socials"></div><a href="#top" data-sec="top">Back to top</a></div></footer>
 </div>
 
 <main id="project" tabindex="-1"></main>
@@ -2044,7 +2043,7 @@ html.cv-open,html.cv-open body{overflow:hidden}
 <div class="cvm" id="cvm" hidden role="dialog" aria-modal="true" aria-label="Shayma Mariey CV">
   <div class="cvm-box">
     <div class="cvm-bar"><span class="lab">Shayma Mariey · CV</span><div class="cvm-act"><a class="cvm-b" id="cvdl" href="cv/Shayma-Mariey-CV.pdf" download="Shayma-Mariey-CV.pdf">Download PDF</a><button type="button" class="cvm-x" aria-label="Close CV">&times;</button></div></div>
-    <div class="cvm-sc" data-lenis-prevent><img src="img/cv-1.webp" alt="Shayma Mariey's CV: profile summary, work experience, education, certifications and skills" loading="lazy"></div>
+    <div class="cvm-sc" data-lenis-prevent><img src="cv-1.webp" alt="Shayma Mariey's CV: profile summary, work experience, education, certifications and skills" loading="lazy"></div>
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
@@ -2076,7 +2075,7 @@ var P=[
  tagline:'An AI-powered stock forecasting platform that combines financial market data, news sentiment analysis and ESG insights to help users make more informed investment decisions.',
  cover:{bg:'esp',poster:true},
  story:true,
- demo:null, /* demo video: set to {src:'video/stocast.mp4',poster:'img/...'} */
+ demo:null, /* demo video: set to {src:'video/stocast.mp4',poster:'...'} */
  meta:[['Project type','Graduation capstone · Web platform'],['Team','Eight students'],['My role','UI design in Figma, front-end and back-end'],['Recognition','UHUB Entrepreneurship Award'],['Presented at','2026 UDST Student Symposium'],['Timeline','Sept 2025 to May 2026']],glance:{hl:['AI-driven stock price forecasting','News sentiment analysis','ESG insights and financial data visualisation','Interactive dashboard']},
  sections:[
   {h:'Overview',p:['Stocast is an AI-powered stock forecasting platform, built as my graduation capstone at the University of Doha for Science and Technology (UDST). A team of eight students started it as Athynos before it became Stocast.','It combines real-time stock data, Natural Language Processing (NLP), news sentiment analysis, AI forecasting and ESG (Environmental, Social and Governance) insights, giving users a fuller picture when they analyse stocks and make investment decisions.'],lead:true},
@@ -2150,7 +2149,7 @@ var P=[
  tagline:'My first website, built for the Web Technologies course at the University of Doha for Science and Technology.',
  cover:{bg:'esp',fill:'vibefit-hero.webp',pos:'50% 50%',hero:'vibefit-hero.webp',banner:1},card:'vibefit-front.webp',cardPos:'50% 30%',csub:'My first website',ov:'vibefit-front.webp',
  ovk:'My first website · Web Technologies course',badges:['First website','Individual project','2024–2025'],
- video:{src:'video/vibefit.mp4',poster:'img/vibefit-poster.webp',cap:'A scroll through the live VibeFit site, from the hero banner to the subscription form.'},
+ video:{src:'video/vibefit.mp4',poster:'vibefit-poster.webp',cap:'A scroll through the live VibeFit site, from the hero banner to the subscription form.'},
  meta:[['Project type','Individual project · Responsive website'],['Course','Web Technologies | UDST'],['Year','2024–2025'],['Technologies','HTML · CSS · JavaScript']],
  sections:[{"h": "Overview", "lead": true, "p": ["VibeFit was my first website, developed for the Web Technologies course at the University of Doha for Science and Technology. It marked my introduction to front-end web development, where I turned what I had learned in class into a fully developed, responsive, multi-page fitness website.", "I began by creating low-fidelity wireframes to plan the website's structure, layout and user experience before bringing the design to life through code."]}, {"h": "Key features and implementation", "items": ["Multi-page website with structured navigation.", "Responsive layouts using CSS Grid and Flexbox.", "Fitness product displays and featured content.", "Customer testimonials section.", "Interactive subscription form with input validation.", "JavaScript functionality and form interactions."]}, {"h": "What I learned", "p": ["This project introduced me to the fundamentals of web development and let me apply HTML, CSS and JavaScript in a practical setting.", "It strengthened my understanding of page layouts, responsive design, accessibility, interactive forms and client-side validation."], "chips": ["Page layouts", "Responsive design", "Accessibility", "Interactive forms", "Client-side validation"]}
  ],links:[{label:'Visit VibeFit',url:'https://shay11m.github.io/Web-Technologies-VibeFit-Project/index.html'}]},
@@ -2458,7 +2457,7 @@ var LOGOS={
  tamholding:['tamholding.webp','#f7f7f7','TAM Holding Group'],tamre:['tamre.webp','#ffffff','TAM Real Estate'],zayam:['zayam.webp','#ffffff','Zayam Investment'],
  cleany:['cleany.webp','#ffffff','Cleany'],sayndtech:['saynd.webp','#ffffff','SayndTech'],wezan:['wezan.webp','#f2eee3','Wezan'],kafaat:['kafaat.webp','#0f6e56','Kafaat'],vibefit:['vibefit.webp','#000000','VibeFit']};
 var MONO={vibefit:'vibefit-cream',udst:'udst',tamholding:'tamholding',tamre:'tamre',zayam:'zayam',cleany:'cleany',sayndtech:'saynd',wezan:'wezan',kafaat:'kafaat'};
-function logoTile(id,cls){var l=LOGOS[id];if(!l)return '';return '<span class="ltile '+(cls||'')+'" style="background:'+l[1]+'"><img src="img/clients/'+l[0]+'" alt="'+esc(l[2])+' logo"></span>'}
+function logoTile(id,cls){var l=LOGOS[id];if(!l)return '';return '<span class="ltile '+(cls||'')+'" style="background:'+l[1]+'"><img src="clients/'+l[0]+'" alt="'+esc(l[2])+' logo"></span>'}
 var INTERN=[
  {h:'Apps',sub:'Mobile apps',items:[['wezan'],['tamelite',{title:'TAM Elite app',cat:'Mobile app',tagline:'The members\' app: browse offers and unlock them at the outlet.'}]]},
  {h:'Websites',sub:'Corporate and product sites',items:[['cleany'],['zayam'],['tamholding'],['tamre'],['yahya'],['kafaat'],['sayndtech'],['tamelite',{title:'TAM Elite website',cat:'Website',tagline:'The membership website, with both cards up front.'}]]},
@@ -2469,13 +2468,13 @@ var BULLETS=['Developed user flows and functional workflows across mobile apps, 
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function coverHTML(p){
   var c=p.cover,inner='';
-  if(p.card)inner='<img class="fillimg" style="object-position:'+(p.cardPos||'50% 50%')+'" src="img/'+p.card+'" alt="'+esc(p.title)+' preview" loading="lazy">';
-  else if(c.fill)inner='<img class="fillimg" style="object-position:'+(c.pos||'50% 50%')+'" src="img/'+c.fill+'" alt="'+esc(p.title)+' preview" loading="lazy">';
-  else if(c.phones)inner='<div class="phones">'+c.phones.map(function(f,i){return '<img src="img/'+f+'" alt="'+(i?'':esc(p.title)+' app screens')+'" loading="lazy">'}).join('')+'</div>';
-  else if(c.browser)inner='<div class="bframe"><div class="bbar"><i></i><i></i><i></i><span>'+esc(c.url||'')+'</span></div><img src="img/'+c.browser+'" alt="'+esc(p.title)+' home page" loading="lazy"></div>';
-  else if(c.img)inner='<img class="shot'+(c.mul?' mul':'')+'" src="img/'+c.img+'" alt="'+esc(p.title)+' preview" loading="lazy">';
-  else if(c.plate)inner='<img class="plate" src="img/'+c.plate+'" alt="'+esc(p.title)+' logo">';
-  else inner='<div class="ty"><img src="img/mono-cream.webp" alt=""><div><b>'+esc(p.title)+'</b></div></div>';
+  if(p.card)inner='<img class="fillimg" style="object-position:'+(p.cardPos||'50% 50%')+'" src="'+p.card+'" alt="'+esc(p.title)+' preview" loading="lazy">';
+  else if(c.fill)inner='<img class="fillimg" style="object-position:'+(c.pos||'50% 50%')+'" src="'+c.fill+'" alt="'+esc(p.title)+' preview" loading="lazy">';
+  else if(c.phones)inner='<div class="phones">'+c.phones.map(function(f,i){return '<img src="'+f+'" alt="'+(i?'':esc(p.title)+' app screens')+'" loading="lazy">'}).join('')+'</div>';
+  else if(c.browser)inner='<div class="bframe"><div class="bbar"><i></i><i></i><i></i><span>'+esc(c.url||'')+'</span></div><img src="'+c.browser+'" alt="'+esc(p.title)+' home page" loading="lazy"></div>';
+  else if(c.img)inner='<img class="shot'+(c.mul?' mul':'')+'" src="'+c.img+'" alt="'+esc(p.title)+' preview" loading="lazy">';
+  else if(c.plate)inner='<img class="plate" src="'+c.plate+'" alt="'+esc(p.title)+' logo">';
+  else inner='<div class="ty"><img src="mono-cream.webp" alt=""><div><b>'+esc(p.title)+'</b></div></div>';
   return '<div class="cover bg-'+c.bg+'">'+inner+'</div>';
 }
 function cardHTML(p,d,o){
@@ -2485,16 +2484,16 @@ function cardHTML(p,d,o){
 function renderWork(){
   var s=byId.stocast,uni=P.filter(function(p){return p.grp==='uni'});
   var out='<div class="grp"><div class="grp-h rv"><h3>Graduation project</h3><span class="lab">UDST capstone</span></div>'+
-  '<a class="feat tx tx-d dark rv" href="#p-stocast"><div class="feat-t"><span class="lab">01 · Graduation capstone · Web platform</span><h4>Stocast</h4><p class="feat-sub">AI-Powered Stock Forecasting Platform</p><p>'+esc(s.tagline)+'</p><ul class="feat-f"><li><em>Recognition</em>UHUB Entrepreneurship Award</li><li><em>Presented at</em>2026 UDST Student Symposium</li><li><em>Team</em>Eight students, Sept 2025 to May 2026</li></ul><span class="btn">View the project</span></div><div class="feat-p"><img class="feat-img" src="img/stocast-front.webp" alt="Shayma presenting the Stocast poster at the UDST Student Symposium" loading="lazy"></div></a></div>';
+  '<a class="feat tx tx-d dark rv" href="#p-stocast"><div class="feat-t"><span class="lab">01 · Graduation capstone · Web platform</span><h4>Stocast</h4><p class="feat-sub">AI-Powered Stock Forecasting Platform</p><p>'+esc(s.tagline)+'</p><ul class="feat-f"><li><em>Recognition</em>UHUB Entrepreneurship Award</li><li><em>Presented at</em>2026 UDST Student Symposium</li><li><em>Team</em>Eight students, Sept 2025 to May 2026</li></ul><span class="btn">View the project</span></div><div class="feat-p"><img class="feat-img" src="stocast-front.webp" alt="Shayma presenting the Stocast poster at the UDST Student Symposium" loading="lazy"></div></a></div>';
   out+='<div class="grp"><div class="grp-h rv"><h3>University projects</h3><span class="lab">'+uni.length+' projects</span></div><div class="grid uni">'+uni.map(function(p,i){return cardHTML(p,i*.08)}).join('')+'</div></div>';
   if(0)out+='<div class="grp"><div class="grp-h rv"><h3>Internship</h3><span class="lab">Tam Holding Group</span></div>'+
   '<a class="ipv tx tx-d dark rv" href="#internship"><div class="ipv-t"><div><span class="lab">UI/UX Design Intern, Sept to Nov 2026</span><h4 style="margin-top:22px">Internship work</h4><p>Mobile apps, corporate websites including SayndTech, and a web app across Tam Holding Group\'s companies. See every project in one place.</p></div><span class="btn" style="align-self:flex-start">View all internship work</span></div>'+
-  '<div class="ipv-m"><img class="ipv-photo" src="img/internship3.webp" alt="Shayma beside the SayndTech sign at Tam Holding Group" loading="lazy"></div></a></div>';
+  '<div class="ipv-m"><img class="ipv-photo" src="internship3.webp" alt="Shayma beside the SayndTech sign at Tam Holding Group" loading="lazy"></div></a></div>';
   document.getElementById('workList').innerHTML=out;
 }
 function pageHead(back,backLbl,tag,title,tl,meta,logo){
   var m=meta.map(function(x){return '<div><span class="lab">'+esc(x[0])+'</span>'+(x[2]?'<a href="'+x[2]+'" target="_blank" rel="noopener">'+esc(x[1])+'</a>':'<span>'+esc(x[1])+'</span>')+'</div>'}).join('');
-  var lg=logo&&MONO[logo]?'<img src="img/clients/mono/'+MONO[logo]+'.png" alt="'+esc(title)+' logo">':'';
+  var lg=logo&&MONO[logo]?'<img src="clients/mono/'+MONO[logo]+'.png" alt="'+esc(title)+' logo">':'';
   return '<section class="ph tx tx-d dark"><div class="wrap"><a class="back" href="'+back+'">&larr; '+backLbl+'</a>'
    +'<div class="ph-g'+(lg?' has-logo':'')+'"><div class="ph-l"><span class="lab pfade">'+esc(tag)+'</span><h1'+(title.length>18?' class="long"':'')+'><span class="ml pin"><span>'+esc(title)+'</span></span></h1>'+(tl?'<p class="tl pfade">'+esc(tl)+'</p>':'')+'</div>'
    +(lg?'<div class="ph-logo2 pfade">'+lg+'</div>':'')+'</div><div class="pmeta pfade">'+m+'</div></div></section>';
@@ -2502,7 +2501,7 @@ function pageHead(back,backLbl,tag,title,tl,meta,logo){
 var ARR='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';
 function visitHTML(p){if(!p.links||!p.links.length)return '';return '<div class="vs2">'+p.links.map(function(l){var d=l.url.replace(/^https?:\/\//,'').replace(/\/.*$/,'').replace(/^www\./,'');return '<a class="vs2-a" href="'+l.url+'" target="_blank" rel="noopener"><span class="vs2-k">Visit the live site</span><b>'+esc(d)+'</b><i>'+ARR+'</i></a>'}).join('')+'</div>'}
 function pager(p){var n=P.length,pr=P[(p.i-1+n)%n],nx=P[(p.i+1)%n];return '<nav class="pager tx tx-b dark" aria-label="More projects"><div class="wrap pg-in"><a class="pg pg-p" href="#p-'+pr.id+'"><span class="lab">&larr; Previous project</span><b>'+esc(pr.title)+'</b></a><a class="pg pg-n" href="#p-'+nx.id+'"><span class="lab">Next project &rarr;</span><b>'+esc(nx.title)+'</b></a></div></nav>'}
-function foot(href,lbl){return '<footer class="foot tx tx-d dark"><div class="wrap foot-in"><img src="img/mono-cream.webp" alt=""><span>© 2026 Shayma Mariey</span><a href="'+href+'">'+lbl+'</a></div></footer>'}
+function foot(href,lbl){return '<footer class="foot tx tx-d dark"><div class="wrap foot-in"><img src="mono-cream.webp" alt=""><span>© 2026 Shayma Mariey</span><a href="'+href+'">'+lbl+'</a></div></footer>'}
 var SHOWS=[];
 var ARW='<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>';
 function showHTML(o){
@@ -2510,11 +2509,11 @@ function showHTML(o){
   var pad=function(x){return ('0'+x).slice(-2)};
   return '<div class="ps rv"><div class="ps-h"><h3>'+esc(o.k)+'</h3>'+(o.lead?'<p>'+esc(o.lead)+'</p>':'')+'</div>'
    +'<div class="show v-'+o.variant+(o.glow?' g-'+o.glow:'')+'" data-s="'+id+'" tabindex="0" aria-roledescription="carousel" aria-label="'+esc(o.k)+'">'
-   +'<div class="sh-stage">'+o.items.map(function(x,i){return '<img class="sh-img'+(i?'':' on')+'" src="img/'+x.img+'" alt="'+esc(x.t||(o.k+' '+(i+1)))+'" loading="'+(i<2?'eager':'lazy')+'" decoding="async">'}).join('')
+   +'<div class="sh-stage">'+o.items.map(function(x,i){return '<img class="sh-img'+(i?'':' on')+'" src="'+x.img+'" alt="'+esc(x.t||(o.k+' '+(i+1)))+'" loading="'+(i<2?'eager':'lazy')+'" decoding="async">'}).join('')
    +'<button class="sh-nav sh-prev" type="button" data-d="-1" aria-label="Previous">'+ARW+'</button><button class="sh-nav sh-next" type="button" data-d="1" aria-label="Next">'+ARW+'</button>'
    +'<span class="sh-count"><b>01</b> / '+pad(n)+'</span><span class="sh-bar"><i></i></span></div>'
    +'<div class="sh-cap in" aria-live="polite"><div><em class="sh-k">'+esc(f.k)+'</em><b class="sh-t">'+esc(f.t)+'</b></div><p class="sh-d">'+esc(f.d)+'</p></div>'
-   +'<div class="sh-thumbs">'+o.items.map(function(x,i){return '<button class="sh-th'+(i?'':' on')+'" type="button" data-i="'+i+'" aria-label="Show '+esc(x.t||String(i+1))+'"><img src="img/'+x.img+'" alt="" loading="lazy"></button>'}).join('')+'</div>'
+   +'<div class="sh-thumbs">'+o.items.map(function(x,i){return '<button class="sh-th'+(i?'':' on')+'" type="button" data-i="'+i+'" aria-label="Show '+esc(x.t||String(i+1))+'"><img src="'+x.img+'" alt="" loading="lazy"></button>'}).join('')+'</div>'
    +'</div></div>';
 }
 function initShows(root){
@@ -2544,7 +2543,7 @@ function initShows(root){
 var AUTOS=[];
 function autoHTML(list,cls){
   var n=list.length,pad=function(x){return ('0'+x).slice(-2)};
-  return '<div class="auto '+(cls||'')+' rv" data-n="'+n+'"><div class="au-view"><div class="au-track">'+list.map(function(x,i){return '<figure class="au-f'+(i?'':' on')+'" data-i="'+i+'" data-cap="'+esc(x[1])+'"><img class="au-fg" src="img/'+x[0]+'" alt="'+esc(x[1])+'" decoding="async"></figure>'}).join('')+'</div></div>'
+  return '<div class="auto '+(cls||'')+' rv" data-n="'+n+'"><div class="au-view"><div class="au-track">'+list.map(function(x,i){return '<figure class="au-f'+(i?'':' on')+'" data-i="'+i+'" data-cap="'+esc(x[1])+'"><img class="au-fg" src="'+x[0]+'" alt="'+esc(x[1])+'" decoding="async"></figure>'}).join('')+'</div></div>'
    +'<button class="au-nav au-p" type="button" aria-label="Previous photo">'+ARW+'</button><button class="au-nav au-n" type="button" aria-label="Next photo">'+ARW+'</button>'+'<div class="au-cap"><em><b>01</b> / '+pad(n)+'</em><span class="au-t">'+esc(list[0][1])+'</span><span class="au-bar"><i></i></span></div></div>';
 }
 function initAutos(root){
@@ -2560,14 +2559,14 @@ function initAutos(root){
     if(!RM)AUTOS.push(setInterval(function(){if(!hold&&document.visibilityState==='visible')go(cur+1)},3000));
   });
 }
-function mos(list,cls){return '<div class="mos '+(cls||'')+'">'+list.map(function(x){return '<figure class="mo'+(x[2]?' '+x[2]:'')+' rv"><img src="img/'+x[0]+'" alt="'+esc(x[1])+'" loading="lazy"><figcaption>'+esc(x[1])+'</figcaption></figure>'}).join('')+'</div>'}
+function mos(list,cls){return '<div class="mos '+(cls||'')+'">'+list.map(function(x){return '<figure class="mo'+(x[2]?' '+x[2]:'')+' rv"><img src="'+x[0]+'" alt="'+esc(x[1])+'" loading="lazy"><figcaption>'+esc(x[1])+'</figcaption></figure>'}).join('')+'</div>'}
 function chHead(n,kick,title){return '<div class="ch-h rv"><b class="ch-n">'+n+'</b><div><span class="lab">'+kick+'</span><h2>'+title+'</h2></div></div>'}
-function brandHead(n,kick,title,when,logo,alt,wide){return '<div class="bh rv"><div class="bh-logo'+(wide?' wide':'')+'"><img src="img/'+logo+'" alt="'+alt+'"></div><div class="bh-t"><span class="lab">'+n+' · '+kick+'</span><h2>'+title+'</h2><p class="bh-w">'+when+'</p></div></div>'}
+function brandHead(n,kick,title,when,logo,alt,wide){return '<div class="bh rv"><div class="bh-logo'+(wide?' wide':'')+'"><img src="'+logo+'" alt="'+alt+'"></div><div class="bh-t"><span class="lab">'+n+' · '+kick+'</span><h2>'+title+'</h2><p class="bh-w">'+when+'</p></div></div>'}
 function deckBand(title,lead,dir,n){var it=[];for(var k=1;k<=n;k++)it.push({img:dir+'/slide-'+('0'+k).slice(-2)+'.webp',k:'',t:'',d:''});return '<section class="vband sx-b sx3 tx tx-d dark"><div class="wrap">'+showHTML({k:title,lead:lead,variant:'deck',items:it})+'</div></section>'}
 function cards(list,cls){return '<div class="sx-cards '+(cls||'')+'">'+list.map(function(x,i){return '<div class="sx-card rv" style="--d:'+(i%3*.06)+'s"><em>0'+(i+1)+'</em><b>'+x[0]+'</b><p>'+x[1]+'</p></div>'}).join('')+'</div>'}
 function blk(title,sub){return '<div class="blk-h rv"><h3>'+title+'</h3>'+(sub?'<span class="lab">'+sub+'</span>':'')+'</div>'}
 function two(lead,rest){return '<div class="two rv"><p class="big-lead">'+lead+'</p><div class="txt">'+rest.map(function(t){return '<p>'+t+'</p>'}).join('')+'</div></div>'}
-function soft(img,cap,cls){return '<figure class="soft '+(cls||'')+' rv"><img src="img/'+img+'" alt="'+cap+'"><figcaption>'+cap+'</figcaption></figure>'}
+function soft(img,cap,cls){return '<figure class="soft '+(cls||'')+' rv"><img src="'+img+'" alt="'+cap+'"><figcaption>'+cap+'</figcaption></figure>'}
 function journeyHTML(p){
   var V=[["ch-1", "21 Sep to 4 Dec 2025", "Capstone 1 (Practicum)", "Athynos proposal", "Our team of eight proposed an AI stock forecasting platform with ESG insights. It was nominated for first place in the capstone presentations.", "grad/athynos-present.webp"], ["ch-2", "1 February 2026", "Award", "UHUB Entrepreneurship Award", "Selected as the 2025/2026 recipient for the strong commercial potential of the project.", "stocast-award-hd.webp"], ["ch-3", "2026", "Delegates", "Web Summit", "As award recipients we attended Web Summit as UDST delegates, with talks on technology, UX and AI.", "grad/ws-811.webp"], ["ch-4", "11 Jan to 14 May 2026", "Capstone 2", "Athynos becomes Stocast", "We built the idea into a full-stack platform where every forecast comes with news sentiment and ESG context.", "grad/stocast-conclusion.webp"], ["ch-5", "14 May 2026", "Showcase", "UDST Student Symposium", "We presented our poster to industry guests at the first university-wide student symposium at UDST.", "stocast-front.webp"]];
   return '<section class="ch sx3 tx tx-l vtl"><div class="wrap">'
@@ -2575,7 +2574,7 @@ function journeyHTML(p){
    +'</div></section>'
    +'<section class="hz" aria-label="The journey"><div class="hz-pin"><div class="wrap hz-top"><div class="hz-hd"><span class="lab">The journey</span><h2>From proposal <span class="ital">to showcase</span></h2></div>'
    +'<div class="hz-rail"><span class="hz-fill"></span>'+V.map(function(v,i){return '<button type="button" class="hz-n" data-i="'+i+'" style="left:'+(i*25)+'%"><i></i><b>'+v[1]+'</b></button>'}).join('')+'</div></div>'
-   +'<div class="hz-vp"><div class="hz-track">'+V.map(function(v,i){return '<article class="hz-c"><div class="hz-img"><img src="img/'+v[5]+'" alt="" loading="lazy"></div><div class="hz-t"><em>0'+(i+1)+'<small>/05</small></em><span class="lab">'+v[2]+' · '+v[1]+'</span><h3>'+v[3]+'</h3><p>'+v[4]+'</p><button type="button" class="hz-go" data-to="'+v[0]+'">Read the chapter &rarr;</button></div></article>'}).join('')+'</div></div>'
+   +'<div class="hz-vp"><div class="hz-track">'+V.map(function(v,i){return '<article class="hz-c"><div class="hz-img"><img src="'+v[5]+'" alt="" loading="lazy"></div><div class="hz-t"><em>0'+(i+1)+'<small>/05</small></em><span class="lab">'+v[2]+' · '+v[1]+'</span><h3>'+v[3]+'</h3><p>'+v[4]+'</p><button type="button" class="hz-go" data-to="'+v[0]+'">Read the chapter &rarr;</button></div></article>'}).join('')+'</div></div>'
    +'<p class="hz-hint wrap">Keep scrolling to move through the timeline</p></div></section>';
 }
 function gantt(){
@@ -2594,7 +2593,7 @@ function storyHTML(p){
   var h='<section class="sx-hero sx3 tx tx-d dark"><div class="wrap">'
    +'<a class="back" href="#work">&larr; All projects</a>'
    +'<span class="lab pfade" style="display:block">Graduation project · UDST capstone 2025 to 2026</span>'
-   +'<div class="ph-g has-logo"><div class="ph-l"><h1 class="sx-title"><span class="ml pin"><span>Stocast</span></span></h1></div><div class="ph-logo2 pfade"><img src="img/clients/mono/udst.png" alt="University of Doha for Science and Technology logo"></div></div>'
+   +'<div class="ph-g has-logo"><div class="ph-l"><h1 class="sx-title"><span class="ml pin"><span>Stocast</span></span></h1></div><div class="ph-logo2 pfade"><img src="clients/mono/udst.png" alt="University of Doha for Science and Technology logo"></div></div>'
    +'<p class="sx-tl pfade">AI-powered stock forecasting with ESG insights using NLP. A capstone that began as Athynos and grew into Stocast.</p>'
    +'<div class="pmeta pfade">'+p.meta.map(function(x){return '<div><span class="lab">'+esc(x[0])+'</span><span>'+esc(x[1])+'</span></div>'}).join('')+'</div>'
    +'</div></section>';
@@ -2602,7 +2601,7 @@ function storyHTML(p){
   // tools
   var LAY=[["Design", "How it looks", [["Figma", "UI design", "figma"], ["Canva", "Presentations", "canva"]]], ["Build", "How it runs", [["Visual Studio Code", "Code editor", "vscode"], ["Node.js and Express", "Web server", "nodejs"], ["GitHub", "Version control", "github"]]], ["Data", "What it reads", [["MongoDB Atlas", "Database", "mongodb"], ["Yahoo Finance", "Market data", ""], ["Excel", "Data and analysis", ""]]], ["Intelligence", "What it predicts", [["Prophet", "Forecasting model", ""], ["AI forecasting engine", "Price predictions", ""], ["NLP integration", "News sentiment", ""], ["ESG metrics", "Sustainability scores", ""]]], ["Assistants", "How we worked faster", [["Claude", "AI assistant", "claude"], ["ChatGPT", "AI assistant", ""]]]];
   h+='<section class="ch sx3 tx tx-d dark stk-sec"><div class="wrap"><div class="stk-hd rv"><span class="lab">Tools we used</span><h2>Fourteen tools, <span class="ital">five layers</span></h2><p>How the platform was designed, built, fed with data, made intelligent and delivered as a team.</p></div><div class="tl5">'
-   +LAY.map(function(l,i){return '<div class="tl5-c rv" style="--i:'+i+'"><div class="tl5-h"><em>0'+(i+1)+'</em><b>'+l[0]+'</b><span>'+l[1]+'</span></div><ul>'+l[2].map(function(t){return '<li><i>'+(t[2]?'<img src="img/logos/'+t[2]+'.png" alt="">':'<span>'+t[0].split(' ').map(function(w){return w[0]}).join('').slice(0,2)+'</span>')+'</i><span><b>'+t[0]+'</b><small>'+t[1]+'</small></span></li>'}).join('')+'</ul><span class="tl5-n">'+(l[2].length<10?'0':'')+l[2].length+' tools</span></div>'}).join('')
+   +LAY.map(function(l,i){return '<div class="tl5-c rv" style="--i:'+i+'"><div class="tl5-h"><em>0'+(i+1)+'</em><b>'+l[0]+'</b><span>'+l[1]+'</span></div><ul>'+l[2].map(function(t){return '<li><i>'+(t[2]?'<img src="logos/'+t[2]+'.png" alt="">':'<span>'+t[0].split(' ').map(function(w){return w[0]}).join('').slice(0,2)+'</span>')+'</i><span><b>'+t[0]+'</b><small>'+t[1]+'</small></span></li>'}).join('')+'</ul><span class="tl5-n">'+(l[2].length<10?'0':'')+l[2].length+' tools</span></div>'}).join('')
    +'</div></div></section>';
   // 01 Athynos
   h+='<section class="ch sx3 tx tx-d dark" id="ch-1"><div class="wrap">'
@@ -2656,15 +2655,15 @@ function storyHTML(p){
 }
 function heroHTML(p){
   var c=p.cover,t=esc(p.title),inner,cls='';
-  if(c.hero){inner='<img class="ph-photo" src="img/'+c.hero+'" alt="'+t+' preview">';cls='photo'}
-  else if(c.phones){inner='<div class="ph-phones">'+c.phones.map(function(f,i){return '<img src="img/'+f+'" alt="'+(i?'':t+' app screens')+'">'}).join('')+'</div>';cls='phones'}
-  else if(c.img){inner='<img class="ph-mock'+(c.mul?' mul':'')+'" src="img/'+c.img+'" alt="'+t+' preview">';cls=c.mul?'photo':'mock'}
-  else if(c.fill){inner='<img class="ph-photo" src="img/'+c.fill+'" alt="'+t+' preview">';cls='photo'}
+  if(c.hero){inner='<img class="ph-photo" src="'+c.hero+'" alt="'+t+' preview">';cls='photo'}
+  else if(c.phones){inner='<div class="ph-phones">'+c.phones.map(function(f,i){return '<img src="'+f+'" alt="'+(i?'':t+' app screens')+'">'}).join('')+'</div>';cls='phones'}
+  else if(c.img){inner='<img class="ph-mock'+(c.mul?' mul':'')+'" src="'+c.img+'" alt="'+t+' preview">';cls=c.mul?'photo':'mock'}
+  else if(c.fill){inner='<img class="ph-photo" src="'+c.fill+'" alt="'+t+' preview">';cls='photo'}
   else return '';
   return '<section class="pc2 pc2-after pc2-'+cls+(c.bg==='cream'&&c.hero?' pc2-cr':'')+(c.banner?' pc2-banner':'')+'"><div class="wrap"><div class="pc2-in clip">'+inner+'</div></div></section>';
 }
 function stageHTML(p){var st=p.stage||{};var c=p.cover,src=c.hero||c.fill||c.img;
-  var fig=st.phones?'<figure class="stage-f stage-ph">'+st.phones.map(function(f,i){return '<img src="img/'+f+'" alt="'+(i==2?esc(p.title)+' app screens':'')+'" style="--i:'+i+'">'}).join('')+'</figure>':'<figure class="stage-f"><img src="img/'+src+'" alt="'+esc(p.title)+' app screens"></figure>';
+  var fig=st.phones?'<figure class="stage-f stage-ph">'+st.phones.map(function(f,i){return '<img src="'+f+'" alt="'+(i==2?esc(p.title)+' app screens':'')+'" style="--i:'+i+'">'}).join('')+'</figure>':'<figure class="stage-f"><img src="'+src+'" alt="'+esc(p.title)+' app screens"></figure>';
   return '<section class="stage stage-'+p.id+'"><div class="wrap"><div class="stage-h"><span class="lab">App showcase</span><p>'+esc(st.t||'')+'</p></div>'+fig+'<div class="stage-cue" aria-hidden="true"><span>Scroll to the overview</span><i></i></div></div></section>';
 }
 function glanceHTML(p){var g=p.glance;if(!g)return '';
@@ -2672,10 +2671,10 @@ function glanceHTML(p){var g=p.glance;if(!g)return '';
 }
 function ovFig(p){
   var c=p.cover,t=esc(p.title);
-  if(p.ov)return '<figure class="ovs-fig ovs-photo rv"><img src="img/'+p.ov+'" alt="'+t+' overview"></figure>';
-  if(c.hero||c.fill)return '<figure class="ovs-fig ovs-photo rv"><img src="img/'+(c.hero||c.fill)+'" alt="'+t+' preview"></figure>';
-  if(c.phones)return '<figure class="ovs-fig ovs-phones rv">'+c.phones.map(function(f,i){return '<img src="img/'+f+'" alt="'+(i?'':t+' app screens')+'">'}).join('')+'</figure>';
-  if(c.img)return '<figure class="ovs-fig ovs-mock rv"><img src="img/'+c.img+'" alt="'+t+' preview"></figure>';
+  if(p.ov)return '<figure class="ovs-fig ovs-photo rv"><img src="'+p.ov+'" alt="'+t+' overview"></figure>';
+  if(c.hero||c.fill)return '<figure class="ovs-fig ovs-photo rv"><img src="'+(c.hero||c.fill)+'" alt="'+t+' preview"></figure>';
+  if(c.phones)return '<figure class="ovs-fig ovs-phones rv">'+c.phones.map(function(f,i){return '<img src="'+f+'" alt="'+(i?'':t+' app screens')+'">'}).join('')+'</figure>';
+  if(c.img)return '<figure class="ovs-fig ovs-mock rv"><img src="'+c.img+'" alt="'+t+' preview"></figure>';
   return '';
 }
 function renderProject(p){
@@ -2711,7 +2710,7 @@ function renderProject(p){
   if(p.video)h+='</div></section><section class="vband tx tx-d dark"><div class="wrap"><div class="vb-h rv"><div><span class="lab">Walkthrough</span><h3>See it <span class="ital">in motion</span></h3></div><p>'+esc(p.video.cap)+'</p></div><div class="lap rv"><div class="lap-scr"><video src="'+p.video.src+'" poster="'+p.video.poster+'" muted loop playsinline preload="metadata" aria-label="'+esc(p.title)+' walkthrough"></video><button class="vplay" type="button"><i><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></i><span>Play walkthrough</span></button></div><div class="lap-base"></div></div></div></section><section class="pbody tx tx-l"><div class="wrap">';
   if(p.deck){var dk=[];for(var q=1;q<=p.deck.n;q++)dk.push({img:p.deck.dir+'/slide-'+('0'+q).slice(-2)+'.webp',k:'',t:'',d:''});h+='</div></section><section class="vband tx tx-d dark"><div class="wrap">'+showHTML({k:p.deck.k,lead:p.deck.lead,variant:'deck',items:dk})+'</div></section><section class="pbody tx tx-l"><div class="wrap">';}
   if(p.slides){var it=[];for(var k=1;k<=p.slides;k++)it.push({img:'slides/slide-'+('0'+k).slice(-2)+'.webp',k:'',t:'',d:''});h+='</div></section><section class="vband tx tx-d dark"><div class="wrap">'+showHTML({k:'The presentation',lead:'Our capstone defence deck, from the problem to the results and future work.',variant:'deck',items:it})+'</div></section><section class="pbody tx tx-l"><div class="wrap">';}
-  (p.figs||[]).forEach(function(f){if(f.show){h+=showHTML({k:f.h,lead:f.lead||'',variant:'chart',auto:4000,items:f.items.map(function(x,i){return {img:x.img,k:(i<9?'0':'')+(i+1)+' / '+(f.items.length<10?'0':'')+f.items.length,t:x.t||'',d:x.cap}})});return}if(f.full){h+='<div class="ffig"><div class="ffig-h rv">'+(f.kick?'<span class="lab">'+esc(f.kick)+'</span>':'')+'<h3>'+esc(f.h)+'</h3>'+(f.lead?'<p>'+esc(f.lead)+'</p>':'')+'</div>'+f.items.map(function(x){return '<figure class="ffig-f rv"><img src="img/'+x.img+'" alt="'+esc(x.cap)+'" loading="lazy"><figcaption>'+esc(x.cap)+'</figcaption></figure>'}).join('')+'</div>';return}h+='<div class="prow rv"><h3>'+esc(f.h)+'</h3><div class="figs '+(f.gal?'gal':'c'+(f.cols||1))+'">'+f.items.map(function(x){return '<figure class="fig'+(x.wide?' wide':'')+(x.logo?' logo':' fx rv')+(x.cls?' '+x.cls:'')+'"><img src="img/'+x.img+'" alt="'+esc(x.cap)+'" loading="lazy"><figcaption>'+esc(x.cap)+'</figcaption></figure>'}).join('')+'</div></div>'});
+  (p.figs||[]).forEach(function(f){if(f.show){h+=showHTML({k:f.h,lead:f.lead||'',variant:'chart',auto:4000,items:f.items.map(function(x,i){return {img:x.img,k:(i<9?'0':'')+(i+1)+' / '+(f.items.length<10?'0':'')+f.items.length,t:x.t||'',d:x.cap}})});return}if(f.full){h+='<div class="ffig"><div class="ffig-h rv">'+(f.kick?'<span class="lab">'+esc(f.kick)+'</span>':'')+'<h3>'+esc(f.h)+'</h3>'+(f.lead?'<p>'+esc(f.lead)+'</p>':'')+'</div>'+f.items.map(function(x){return '<figure class="ffig-f rv"><img src="'+x.img+'" alt="'+esc(x.cap)+'" loading="lazy"><figcaption>'+esc(x.cap)+'</figcaption></figure>'}).join('')+'</div>';return}h+='<div class="prow rv"><h3>'+esc(f.h)+'</h3><div class="figs '+(f.gal?'gal':'c'+(f.cols||1))+'">'+f.items.map(function(x){return '<figure class="fig'+(x.wide?' wide':'')+(x.logo?' logo':' fx rv')+(x.cls?' '+x.cls:'')+'"><img src="'+x.img+'" alt="'+esc(x.cap)+'" loading="lazy"><figcaption>'+esc(x.cap)+'</figcaption></figure>'}).join('')+'</div></div>'});
   if(p.links&&p.links.length&&!visited)h+='<div class="visit rv"><span class="lab">Visit the live site</span><div class="vs-list">'+p.links.map(function(l){var d=l.url.replace(/^https?:\/\//,'').replace(/\/.*$/,'').replace(/^www\./,'');return '<a class="vs" href="'+l.url+'" target="_blank" rel="noopener"><span class="vs-k">'+esc(l.label)+'</span><b>'+esc(d)+'</b><i>'+ARR+'</i></a>'}).join('')+'</div></div>';
   h+='</div></section>';
   h+=pager(p)+foot(p.int?'#internship':'#work',p.int?'Internship work':'All projects');
@@ -2774,13 +2773,13 @@ function renderContact(){
 })();
 function renderCerts(){
   document.getElementById('cgrid').innerHTML=CERTS.map(function(c,i){
-    return '<button class="cert rv" type="button" style="--d:'+(i%3)*.08+'s" data-i="'+i+'"><div class="cert-img"><img src="img/'+c.img+'" alt="'+esc(c.t)+' certificate" loading="lazy"></div><div class="cert-m"><span class="lab">'+esc(c.kind)+', '+esc(c.d)+'</span><b>'+esc(c.t)+'</b><span>'+esc(c.by)+'</span>'+'</div></button>';
+    return '<button class="cert rv" type="button" style="--d:'+(i%3)*.08+'s" data-i="'+i+'"><div class="cert-img"><img src="'+c.img+'" alt="'+esc(c.t)+' certificate" loading="lazy"></div><div class="cert-m"><span class="lab">'+esc(c.kind)+', '+esc(c.d)+'</span><b>'+esc(c.t)+'</b><span>'+esc(c.by)+'</span>'+'</div></button>';
   }).join('');
   var lb=document.getElementById('lb'),li=document.getElementById('lbimg'),lc=document.getElementById('lbcap');
   function open(src,alt,cap){li.style.visibility='';li.src=src;li.alt=alt;lc.textContent=cap;if(lb.showModal){lb.showModal();stopS()}else window.open(src,'_blank')}
   document.addEventListener('click',function(e){
     var b=e.target.closest&&e.target.closest('.cert');
-    if(b){var c=CERTS[+b.getAttribute('data-i')];open('img/'+c.img,c.t+' certificate',c.t+', '+c.by+', '+c.d);return}
+    if(b){var c=CERTS[+b.getAttribute('data-i')];open(''+c.img,c.t+' certificate',c.t+', '+c.by+', '+c.d);return}
     var f=e.target.closest&&e.target.closest('.fig:not(.logo) img,.scr img,.sh-img.on,.mo img,.sx-poster img,.au-f.on .au-fg,.sx-main img');
     if(f){open(f.getAttribute('src'),f.alt,f.alt);return}
     var sl=e.target.closest&&e.target.closest('.slides .sl');
@@ -2963,7 +2962,7 @@ if(RM){pl.style.display='none';document.documentElement.classList.add('ready','s
 else{
   window.scrollTo(0,0);
   var go=function(){setTimeout(finishIntro,2700)};
-  var img=new Image();img.onload=go;img.onerror=go;img.src='img/mono-cream.png';
+  var img=new Image();img.onload=go;img.onerror=go;img.src='mono-cream.png';
   setTimeout(finishIntro,6500);
 }
 if(!startKey&&startHash&&secMap[startHash]&&startHash!=='top')setTimeout(function(){scrollTo(document.getElementById(startHash),true)},RM?50:5000);
@@ -2971,5 +2970,4 @@ frame();
 })();
 </script>
 
-</body></html>
 </body></html>
